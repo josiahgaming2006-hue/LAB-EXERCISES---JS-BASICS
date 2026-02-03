@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Form Validation</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+    }
+
+    .container {
+      width: 300px;
+      margin: 100px auto;
+      padding: 20px;
+      background-color: white;
+      border-radius: 5px;
+    }
+
+    input {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+    }
+
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      margin-top: 15px;
+      cursor: pointer;
+    }
+
+    #message {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="container">
+  <h2>Registration Form</h2>
+
+  <form onsubmit="return validateForm()">
+    Name:
+    <input type="text" id="name">
+
+    Email:
+    <input type="text" id="email">
+
+    <input type="submit" value="Submit">
+  </form>
+
+  <p id="message"></p>
+</div>
+
+<!-- Link to external JavaScript -->
+<script src="main.js"></script>
+
+</body>
+</html>

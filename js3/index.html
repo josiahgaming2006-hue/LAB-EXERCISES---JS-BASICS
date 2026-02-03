@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Total Price Calculator</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+    }
+
+    .container {
+      width: 300px;
+      margin: 100px auto;
+      padding: 20px;
+      background-color: white;
+      border-radius: 5px;
+    }
+
+    input, button {
+      width: 100%;
+      padding: 8px;
+      margin-top: 10px;
+    }
+
+    button {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="container">
+  <h2>Total Price with Tax</h2>
+
+  Price:
+  <input type="number" id="price">
+
+  Tax Rate (e.g. 0.12):
+  <input type="number" id="tax">
+
+  <button onclick="showTotal()">Calculate</button>
+
+  <p id="result"></p>
+</div>
+
+<!-- Link to JavaScript -->
+<script src="main.js"></script>
+
+</body>
+</html>
